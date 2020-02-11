@@ -7,7 +7,7 @@ body {
           box-sizing: border-box;
   font-weight: 400;
   font-family: 'Barlow', sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 nav {
@@ -19,6 +19,7 @@ nav {
 nav #img1 {
   margin-top: 3rem;
   margin-left: 6rem;
+  max-width: 100%;
 }
 
 nav .aBox {
@@ -60,7 +61,6 @@ nav #logo {
 
 .leftBox {
   font-family: 'Barlow Condensed', sans-serif;
-  float: left;
   width: 500px;
   max-width: 100%;
   margin-top: 10rem;
@@ -126,20 +126,21 @@ nav #logo {
 }
 
 #img2 {
+  position: relative;
   float: right;
-  margin-right: -16.5rem;
-  margin-top: 6rem;
+  margin-right: -17rem;
+  margin-top: -15rem;
 }
 
 .gray {
-  position: absolute;
-  right: 150px;
-  top: -275px;
+  position: relative;
+  margin-left: 45rem;
+  margin-top: -55rem;
   z-index: -9;
-  margin-right: -10rem;
   background-color: #eef3f6;
   height: 700px;
-  width: 50%;
+  width: 70%;
+  max-width: 100%;
   border-bottom-left-radius: 50px;
 }
 
