@@ -7,13 +7,13 @@ body {
           box-sizing: border-box;
   font-weight: 400;
   font-family: 'Barlow', sans-serif;
+  overflow: hidden;
 }
 
 nav {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 400;
   height: 100px;
-  border: 1px solid red;
 }
 
 nav #img1 {
@@ -21,36 +21,48 @@ nav #img1 {
   margin-left: 6rem;
 }
 
-nav a {
+nav .aBox {
+  width: 450px;
+  max-width: 100%;
+  float: right;
+  margin-right: 8rem;
+  margin-top: 3.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+nav .aBox .dot {
+  background-color: #a0a1ac;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 2rem;
+  margin-bottom: .25rem;
+  opacity: .75;
+}
+
+nav .aBox a {
   text-decoration: none;
-  padding-left: 2rem;
+  padding-left: 2.5rem;
   text-transform: uppercase;
   color: #242942;
 }
 
-nav .dot {
-  color: #5b5f71;
-  font-size: 4rem;
-}
-
-nav .aBox {
-  width: 600px;
-  display: inline-block;
-  border: 1px solid red;
-  float: right;
-  margin-top: 1rem;
-  font-size: 1rem;
+nav .aBox a:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 nav #logo {
-  color: #5b5f71;
+  color: #a0a1ac;
 }
 
 .leftBox {
   font-family: 'Barlow Condensed', sans-serif;
   float: left;
-  border: 1px solid red;
   width: 500px;
+  max-width: 100%;
   margin-top: 10rem;
   margin-left: 6rem;
 }
@@ -60,7 +72,7 @@ nav #logo {
   color: white;
   font-weight: 700;
   border-radius: 25px;
-  padding: 3px 7px;
+  padding: 3px 10px;
   text-transform: uppercase;
   font-size: 1rem;
 }
@@ -68,7 +80,7 @@ nav #logo {
 .leftBox .mono {
   margin-left: .75rem;
   text-transform: uppercase;
-  color: #5b5f71;
+  color: #a0a1ac;
 }
 
 .leftBox h1 {
@@ -84,14 +96,61 @@ nav #logo {
   margin-top: -1rem;
 }
 
+.leftBox button {
+  color: white;
+  background-color: #ff5c5c;
+  border: none;
+  text-transform: uppercase;
+  width: 175px;
+  height: 44px;
+  padding: 10px 10px;
+  font-weight: 700;
+  font-size: .85rem;
+  border-radius: 5px;
+}
+
+.leftBox button:hover {
+  cursor: pointer;
+  opacity: .75;
+}
+
+.leftBox .preview {
+  float: right;
+  text-transform: uppercase;
+  color: #a0a1ac;
+  font-weight: 200;
+  font-size: 1rem;
+  margin-right: 8rem;
+  line-height: .5;
+  letter-spacing: 4px;
+}
+
 #img2 {
   float: right;
   margin-right: -16.5rem;
   margin-top: 6rem;
 }
 
+.gray {
+  position: absolute;
+  right: 150px;
+  top: -275px;
+  z-index: -9;
+  margin-right: -10rem;
+  background-color: #eef3f6;
+  height: 700px;
+  width: 50%;
+  border-bottom-left-radius: 50px;
+}
+
 .attribution {
   position: fixed;
   bottom: 0px;
+  right: 5px;
+}
+
+.attribution :link {
+  color: black;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
